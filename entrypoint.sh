@@ -18,6 +18,7 @@ if [[ ! -f "${GITHUB_WORKSPACE}/sonar-project.properties" ]]; then
     -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
     -Dsonar.login=${INPUT_LOGIN} \
     -Dsonar.password=${SONAR_PASSWORD} \
+    -Dsonar.branch.name=${INPUT_BRANCH} \
     -Dsonar.sources=. \
     -Dsonar.sourceEncoding=UTF-8
 else
@@ -25,5 +26,6 @@ else
     -Dsonar.host.url=${INPUT_HOST} \
     -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
     -Dsonar.login=${INPUT_LOGIN} \
-    -Dsonar.password=${SONAR_PASSWORD}
+    -Dsonar.password=${SONAR_PASSWORD} \
+    -Dsonar.branch.name=${INPUT_BRANCH}
 fi

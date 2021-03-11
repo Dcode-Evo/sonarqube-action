@@ -33,3 +33,7 @@ inputs:
   password:
     description: "Password that goes with the sonar.login username. This should be left blank if an authentication token is being used."
     required: false
+  branch:
+    description: "Set the sonar.branch.name property (VCS Branch name)"
+    required: false
+    default: "master"
