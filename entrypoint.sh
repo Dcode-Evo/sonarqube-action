@@ -25,6 +25,7 @@ else
   sonar-scanner \
     -Dsonar.host.url=${INPUT_HOST} \
     -Dsonar.projectBaseDir=${INPUT_PROJECTBASEDIR} \
+    -Dsonar.projectVersion=${INPUT_PROJECTVERSION} \
     -Dsonar.login=${INPUT_LOGIN} \
     -Dsonar.password=${SONAR_PASSWORD} \
     -Dsonar.branch.name=${INPUT_BRANCH}
